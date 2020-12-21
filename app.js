@@ -1,7 +1,9 @@
+// Element Selectors
 const billInput = document.querySelector(".input-bill");
 const tipInput = document.querySelector(".input-tip");
 const splitInput = document.querySelector(".input-split");
 const calculateTipButton = document.querySelector(".calculate");
+const totalBill = document.querySelector(".total-bill");
 
 calculateTipButton.addEventListener("click", () => {
   let billAmount = billInput.value;
@@ -13,7 +15,7 @@ calculateTipButton.addEventListener("click", () => {
   billAmount = billAmount + billAmount * tipPercent;
   billAmount = billAmount.toFixed(2);
   console.log(billAmount, tipPercent, splitNumber);
-  alert(`Total amount owed including tip: $${billAmount}`);
+  totalBill.innerHTML = `$${billAmount}`;
 });
 
 // additional things you could do:

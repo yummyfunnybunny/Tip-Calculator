@@ -13,6 +13,7 @@
       </div>
       <span display="inline-block" class="bill-amount">
         <label>Bill Amount</label>
+        <p>$</p>
         <input
           class="input-bill"
           type="number"
@@ -23,6 +24,7 @@
       </span>
       <span class="tip-amount">
         <label>Tip Percentage</label>
+        <p>%</p>
         <input
           class="input-tip"
           type="number"
@@ -35,7 +37,8 @@
       </span>
 
       <span class="split-number">
-        <label>Split Number</label>
+        <label>Number Of People</label>
+        <p>#</p>
         <input
           class="input-split"
           type="number"
@@ -44,8 +47,11 @@
         />
       </span>
 
-      <div class="calculate-button">
-        <button class="calculate" type="submit">Calculate Tip</button>
+      <button class="calculate" type="submit">Calculate Tip!</button>
+
+      <div class="bill-total">
+        <h2>Total bill amount plus tip:</h2>
+        <h1 class="total-bill" id="total-bill">$0</h1>
       </div>
     </div>
   </body>
